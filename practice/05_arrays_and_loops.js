@@ -33,7 +33,7 @@ function forLoopSum(arr){
     for (let i = 0; i < arr.length; i++) {
         sum += arr[i];
     }    
-    retun sum;
+    return sum;
 }
 
 // TEST 5
