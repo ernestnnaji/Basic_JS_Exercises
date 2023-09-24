@@ -4,7 +4,7 @@
 // of the array 
 // *NOTE* use the 'arr' parameter
 function first(arr){
-    // your code here
+    return arr[0];
     
 }
 
@@ -12,7 +12,7 @@ function first(arr){
 // Complete the function by returning the length
 // of the array
 function howMany(arr){
-    // your code here
+    return arr.length;
    
 }
 
@@ -21,7 +21,7 @@ function howMany(arr){
 // element of the array
 // *HINT* use the length property
 function last(arr){
-    // your code here
+    return arr[arr.length - 1]
    
 }
 
@@ -29,31 +29,48 @@ function last(arr){
 // Use a FOR LOOP to complete the function
 // return the sum of an array of numbers (all numbers added to together)
 function forLoopSum(arr){
-    // your code here
-    
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }    
+    retun sum;
 }
 
 // TEST 5
 // use a FOR LOOP to to complete the function
 // return the highest number from an array
 function forLoopHighest(arr){
-    // your code here
-    
+    let Highest = arr[0];
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i] > Highest) {
+                Highest = arr[i];
+            }
+        }   
+    return Highest;    
 }
 
 // TEST 6
 // use a FOREACH LOOP to complete the function
 // return the sum of an array of numbers
 function forEachLoopSum(arr){
-    // your code here
-    
+    let sum = 0
+    arr.forEach (function (element) {
+        sum += element;
+    });
+
+ return sum;   
 }
 
 // TEST 7
 // use a FOREACH LOOP to to complete the function
 // return the highest number from an array
 function forEachLoopHighest(arr){
-    // your code here
+    let highest = arr[0];
+    arr.forEach (function (element) {
+        if (element > highest) {
+            highest = element
+    }});
+  return highest;   
   
 }
 
@@ -61,7 +78,14 @@ function forEachLoopHighest(arr){
 // use a WHILE LOOP to complete the function
 // return the sum of all numbers in the array
 function whileLoopSum(arr) {
-    // your code here
+    let sum = 0;
+    let i = 0;
+
+    while (i < arr.length) {
+        sum += arr[i];
+        i++;
+    }
+   return sum; 
   
 }
 
@@ -69,7 +93,16 @@ function whileLoopSum(arr) {
 // use a WHILE LOOP to to complete the function
 // return the highest number from an array
 function whileLoopHighest(arr){
-    // your code here
+    let highest = arr[0];
+    let i = 1;
+
+    while (i < arr.length) {
+        if (arr[i] > highest) {
+            highest = arr[i];
+    }
+    i++;
+  }
+  return highest; 
 }
 
 
