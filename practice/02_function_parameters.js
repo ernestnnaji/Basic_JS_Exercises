@@ -1,25 +1,25 @@
 
 // #1 Complete the function by adding the appropriate
 // parameters to the function.
-function double(num){ // <-- add code inside the parenthesis ()
+function double(num){ // 
     return num * 2
 }
 
 // #2 Complete the function by adding the appropriate
 // parameters to the function.
-function multiply(a, b){ // <-- add code inside the parenthesis ()
+function multiply(a, b){ 
     return a * b;
 }
 
 // #3 Complete the function by adding the appropriate
 // parameters to the function.
-function shout(word){ // <-- add code inside the parenthesis ()
+function shout(word){ 
     return word.toUpperCase();
 }
 
 // #4 Complete the function by adding the appropriate
 // parameters to the function.
-function first(arr){ // <-- add code inside the parenthesis ()
+function first(arr){ 
     return arr[0];
 }
 
